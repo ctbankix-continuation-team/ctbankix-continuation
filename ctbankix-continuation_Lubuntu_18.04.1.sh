@@ -144,7 +144,7 @@ chroot squashfs/ apt-get update
 chroot squashfs/ apt-get -y upgrade
 
 # Zusaetzliche Pakete einspielen
-chroot squashfs/ apt-get -y install tzdata language-pack-de firefox-locale-de squashfs-tools cups network-manager-openconnect-gnome wswiss wngerman language-pack-gnome-de wogerman
+chroot squashfs/ apt-get -y install tzdata language-pack-de firefox-locale-de squashfs-tools cups network-manager-openconnect-gnome wswiss wngerman language-pack-gnome-de wogerman aspell-de hunspell-de-de
 
 # Zeitzone setzen
 echo "Europe/Berlin" | tee squashfs/etc/timezone
@@ -366,7 +366,6 @@ rofs/*
 sys/*
 tmp/*
 var/log/*
-var/cache/apt/archives/*
 EOF
 
 #TODO: Initramdisk bauen und an entsprechende Stelle kopieren, sobald gepatchte Kernel bereitstehen
