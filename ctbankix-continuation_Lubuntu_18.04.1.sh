@@ -53,8 +53,8 @@ add-apt-repository -s "deb http://de.archive.ubuntu.com/ubuntu/ $(lsb_release -s
 apt-get update
 
 apt-get -y install fakeroot
-apt-get -y build-dep linux-image-$(uname -r)
-apt-get source linux-image-$(uname -r)
+apt-get -y build-dep linux
+apt-get source linux
 
 cd $(ls -d */ | grep linux-)
 
@@ -383,6 +383,7 @@ if [[ \$questionResponse = [jJ] ]]
 then
 	echo
 	sudo apt-get -y clean
+	sudo blockdev --setrw \$(findmnt -n -o SOURCE --mountpoint /cdrom)
 	sudo mount -o remount,rw /cdrom
 	sudo mksquashfs / /cdrom/casper/filesystem_new.squashfs -ef /excludes -wildcards
 	sudo rm /cdrom/filesystem_old.squashfs
