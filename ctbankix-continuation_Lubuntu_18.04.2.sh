@@ -105,17 +105,17 @@ export PS4='$(CHECK)\n\n$(tput bold)$(tput setaf 7)$(tput setab 4)+ (${BASH_SOUR
 #### System bauen #### BEGIN ####
 
 apt-get -y install build-essential debootstrap squashfs-tools genisoimage syslinux-common syslinux-utils
-wget -c -N -P source http://cdimage.ubuntu.com/lubuntu/releases/18.04.1/release/lubuntu-18.04.1-desktop-i386.iso
-wget -c -N -P source http://cdimage.ubuntu.com/lubuntu/releases/18.04.1/release/lubuntu-18.04.1-desktop-amd64.iso
+wget -c -N -P source http://cdimage.ubuntu.com/lubuntu/releases/18.04.2/release/lubuntu-18.04.2-desktop-i386.iso
+wget -c -N -P source http://cdimage.ubuntu.com/lubuntu/releases/18.04.2/release/lubuntu-18.04.2-desktop-amd64.iso
 
-mount -o loop source/lubuntu-18.04.1-desktop-amd64.iso /mnt/
+mount -o loop source/lubuntu-18.04.2-desktop-amd64.iso /mnt/
 mkdir iso
 cp -r /mnt/.disk/ /mnt/boot/ /mnt/EFI/ iso/
 mkdir iso/casper
 umount /mnt
 
 # Bereits gebautes Live-System des verwendeteten ISOs entpacken
-mount -o loop source/lubuntu-18.04.1-desktop-i386.iso /mnt/
+mount -o loop source/lubuntu-18.04.2-desktop-i386.iso /mnt/
 unsquashfs -d squashfs /mnt/casper/filesystem.squashfs
 
 # Ressourcen des Build-Systems in Live-System hineinmappen
@@ -288,10 +288,10 @@ cp /mnt/isolinux/boot.cat /mnt/isolinux/isolinux.bin /mnt/isolinux/*.c32 iso/iso
 # Boot (ohne UEFI)
 cat > iso/isolinux/isolinux.cfg << EOF
 default vesamenu.c32
-menu title c't Bankix Lubuntu 18.04.1
+menu title c't Bankix Lubuntu 18.04.2
 
 label ctbankix
-  menu label c't Bankix Lubuntu 18.04.1
+  menu label c't Bankix Lubuntu 18.04.2
   kernel /casper/vmlinuz
   append BOOT_IMAGE=/casper/vmlinuz boot=casper initrd=/casper/initrd.lz showmounts quiet splash -- debian-installer/language=de console-setup/layoutcode?=de
   
@@ -314,7 +314,7 @@ fi
 set menu_color_normal=white/black
 set menu_color_highlight=black/light-gray
 
-menuentry "c't Bankix Lubuntu 18.04.1" {
+menuentry "c't Bankix Lubuntu 18.04.2" {
 	set gfxpayload=keep
 	linux	/casper/vmlinuz  file=/cdrom/preseed/lubuntu.seed boot=casper showmounts quiet splash -- debian-installer/language=de console-setup/layoutcode?=de
 	initrd	/casper/initrd.lz
@@ -323,7 +323,7 @@ EOF
 
 # ToDo: Weglassen?
 cat > iso/boot/grub/loopback.cfg << EOF
-menuentry "c't Bankix Lubuntu 18.04.1" {
+menuentry "c't Bankix Lubuntu 18.04.2" {
 	set gfxpayload=keep
 	linux	/casper/vmlinuz  file=/cdrom/preseed/lubuntu.seed boot=casper iso-scan/filename=${iso_path} showmounts quiet splash -- debian-installer/language=de console-setup/layoutcode?=de
 	initrd	/casper/initrd.lz
