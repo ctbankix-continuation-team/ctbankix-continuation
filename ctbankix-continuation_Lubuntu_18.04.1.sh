@@ -132,6 +132,7 @@ cp /etc/apt/sources.list squashfs/etc/apt/
 
 # Locales setzen
 chroot squashfs/ locale-gen de_DE.UTF-8
+chroot squashfs/ locale-gen de_CH.UTF-8
 
 # System schlank machen
 chroot squashfs/ apt-get -y purge pidgin* abiword* transmission* gnumeric* xfburn* mtpaint simple-scan* sylpheed* audacious* guvcview fonts-noto-cjk ubiquity* mplayer language-pack* lvm2 gparted apport whoopsie blue* btrfs* cryptsetup evolution* gdebi* genisoimage xul-ext-ubufox firefox-locale-*
@@ -286,6 +287,9 @@ mkdir iso/isolinux
 cp /mnt/isolinux/boot.cat /mnt/isolinux/isolinux.bin /mnt/isolinux/*.c32 iso/isolinux/
 
 # Boot (ohne UEFI)
+# Schweiz:
+# - "locale=de_DE" ersetzen durch "locale=de_CH"
+# - "layoutcode=de" ersetzen durch "layoutcode=ch"
 cat > iso/isolinux/isolinux.cfg << EOF
 default vesamenu.c32
 menu title c't Bankix Lubuntu 18.04.1
@@ -293,7 +297,7 @@ menu title c't Bankix Lubuntu 18.04.1
 label ctbankix
   menu label c't Bankix Lubuntu 18.04.1
   kernel /casper/vmlinuz
-  append BOOT_IMAGE=/casper/vmlinuz boot=casper initrd=/casper/initrd.lz showmounts quiet splash -- debian-installer/language=de console-setup/layoutcode?=de
+  append BOOT_IMAGE=/casper/vmlinuz boot=casper initrd=/casper/initrd.lz showmounts quiet splash -- debian-installer/locale=de_DE console-setup/layoutcode=de
   
 label local
   menu label Betriebssystem von Festplatte starten
@@ -316,7 +320,7 @@ set menu_color_highlight=black/light-gray
 
 menuentry "c't Bankix Lubuntu 18.04.1" {
 	set gfxpayload=keep
-	linux	/casper/vmlinuz  file=/cdrom/preseed/lubuntu.seed boot=casper showmounts quiet splash -- debian-installer/language=de console-setup/layoutcode?=de
+	linux	/casper/vmlinuz  file=/cdrom/preseed/lubuntu.seed boot=casper showmounts quiet splash -- debian-installer/locale=de_DE console-setup/layoutcode=de
 	initrd	/casper/initrd.lz
 }
 EOF
@@ -325,7 +329,7 @@ EOF
 cat > iso/boot/grub/loopback.cfg << EOF
 menuentry "c't Bankix Lubuntu 18.04.1" {
 	set gfxpayload=keep
-	linux	/casper/vmlinuz  file=/cdrom/preseed/lubuntu.seed boot=casper iso-scan/filename=${iso_path} showmounts quiet splash -- debian-installer/language=de console-setup/layoutcode?=de
+	linux	/casper/vmlinuz  file=/cdrom/preseed/lubuntu.seed boot=casper iso-scan/filename=${iso_path} showmounts quiet splash -- debian-installer/locale=de_DE console-setup/layoutcode=de
 	initrd	/casper/initrd.lz
 }
 EOF
