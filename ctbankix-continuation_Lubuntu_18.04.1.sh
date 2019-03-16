@@ -276,6 +276,7 @@ user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.predictor.cleaned-up", true);
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.disableResetPrompt", true);
 EOF
 
 # Firefox-Profil ins Zielsystem kopieren
