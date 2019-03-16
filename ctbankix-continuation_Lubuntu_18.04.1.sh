@@ -419,6 +419,11 @@ cp /usr/share/applications/lxrandr.desktop squashfs/etc/skel/Desktop/
 cp /usr/share/applications/firefox.desktop squashfs/etc/skel/Desktop/
 cp /usr/share/applications/update-manager.desktop squashfs/etc/skel/Desktop/
 
+# Echtzeituhr: Lokalzeit anstatt UTC verwenden für Dual-Boot mit Windows
+echo "0.0 0 0" > squashfs/etc/adjtime
+echo "0" >> squashfs/etc/adjtime
+echo "LOCAL" >> squashfs/etc/adjtime
+
 #### System bauen #### END ######
 
 
