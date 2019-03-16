@@ -363,6 +363,7 @@ media/*
 mnt/*
 proc/*
 rofs/*
+root/.cache/*
 sys/*
 tmp/*
 var/log/*
@@ -386,13 +387,13 @@ then
 	sudo blockdev --setrw \$(findmnt -n -o SOURCE --mountpoint /cdrom)
 	sudo mount -o remount,rw /cdrom
 	sudo mksquashfs / /cdrom/casper/filesystem_new.squashfs -ef /excludes -wildcards
-	sudo rm /cdrom/filesystem_old.squashfs
+	sudo rm -f /cdrom/filesystem_old.squashfs
 	sudo mv /cdrom/casper/filesystem.squashfs /cdrom/filesystem_old.squashfs
 	sudo mv /cdrom/casper/filesystem_new.squashfs /cdrom/casper/filesystem.squashfs
 	sudo sync
 	sudo mount -o remount,ro /cdrom
 	echo
-	echo "Das System muss heruntergefahren werden! Aktivieren Sie anschließend den mechansichen Schreibschutzschalter und starten neu. Bitte Taste druecken!"
+	echo "Das System muss heruntergefahren werden! Aktivieren Sie anschließend den mechanischen Schreibschutzschalter und starten Sie neu. Bitte Taste drücken!"
 	read dummy
 	sudo shutdown -P now
 else
