@@ -4,6 +4,10 @@
 
 Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführen. Bereitgestellt wird dazu ein Shell-Skript, mit dem ein neues Live-System erzeugt werden kann. Bitte folgen Sie den Hinweisen im Shell-Skript am Anfang sowie der unten beschriebenen Bauanleitung.
 
+## Neueste Updates
+
+Seit Anfang August 2020 steht ein Skript für die 64-Bit-Version von Lubuntu 20.04.x zur Verfügung. Dieses wird perspektivisch das Skript für die 32-Bit-Version von Lubuntu 18.04.x ersetzen, weil seitens Lubuntu keine 32-Bit-Version mehr bereitgestellt wird.
+
 ## Bauanleitung
 
 ### Build-System bereitstellen
