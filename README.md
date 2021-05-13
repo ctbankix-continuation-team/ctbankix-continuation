@@ -6,14 +6,14 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
-Seit Anfang August 2020 steht ein Skript für die 64-Bit-Version von Lubuntu 20.04.x zur Verfügung. Dieses wird perspektivisch das Skript für die 32-Bit-Version von Lubuntu 18.04.x ersetzen, weil seitens Lubuntu keine 32-Bit-Version mehr bereitgestellt wird.
+Seit Anfang August 2020 steht ein Skript für die 64-Bit-Version von Lubuntu 20.04.x zur Verfügung. Dieses ersetzt das bisherige Skript für die 32-Bit-Version von Lubuntu 18.04.x, weil seitens Lubuntu keine 32-Bit-Version mehr bereitgestellt wird.
 
 ## Bauanleitung
 
 ### Build-System bereitstellen
 
 1. VirtualBox (und ggf. Extension Pack) installieren
-2. Virtuelle Maschine aufsetzen (32-Bit Linux, 50GB Festplattenplatz, min. 2GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 32 Bit 18.04.4](http://cdimage.ubuntu.com/lubuntu/releases/18.04/release/lubuntu-18.04.4-desktop-i386.iso "ISO-Image Lubuntu 18.04.4") installieren.
+2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.2](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.2-desktop-amd64.iso) installieren.
 3. Gasterweiterungen installieren
 
 ### Live-System innerhalb des Build-Systems bauen
@@ -30,9 +30,9 @@ lubuntu@lubuntu:~$ cd build
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix-continuation_Lubuntu_32_18.04.4.sh
-lubuntu@lubuntu:~$ chmod +x ctbankix-continuation_Lubuntu_32_18.04.4.sh
-lubuntu@lubuntu:~$ sudo ./ctbankix-continuation_Lubuntu_32_18.04.4.sh
+lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix-continuation_Lubuntu_64_20.04.2.sh
+lubuntu@lubuntu:~$ chmod +x ctbankix-continuation_Lubuntu_64_20.04.2.sh
+lubuntu@lubuntu:~$ sudo ./ctbankix-continuation_Lubuntu_64_20.04.2.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
