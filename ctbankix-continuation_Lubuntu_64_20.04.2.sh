@@ -22,7 +22,7 @@ echo "====================================="
 echo
 echo "1. Das vorliegende Skript bitte in (L)Ubuntu 20.04.2 64 Bit per sudo auf der Kommandozeile/im Terminal ausfuehren."
 echo "2. Nach Durchlauf des Skriptes steht ein ISO-Image (live.iso) bereit, dass auf einen USB-Stick gebracht werden muss."
-echo "  a) Den USB-Stick (min. 2 GB, besser 4 GB) entsprechend (eine Partition, FAT32) formatieren (bspw. mithilfe der Anwendung 'Laufwerke')."
+echo "  a) Den USB-Stick (min. 4 GB, besser 8 GB) entsprechend (eine Partition, FAT32) formatieren (bspw. mithilfe der Anwendung 'Laufwerke')."
 echo "  b) Das Bootflag des Sticks setzen (bspw. mithilfe der Anwendung 'GParted')."
 echo "  c) Das ISO-Image (live.iso) mithilfe der Anwendung 'UNetbootin' auf den Stick bringen (PS: Der Startmedienersteller ermoeglicht keine volle Funktionalitaet des bankix-Systems)."
 echo
