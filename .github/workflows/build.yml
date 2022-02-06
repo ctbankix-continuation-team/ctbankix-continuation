@@ -25,7 +25,8 @@ jobs:
       - name: Add execution bit in file mode
         run:  chmod +x ctbankix_lubuntu_20.04.3.sh
         
-
+      - name: Execute script
+        run:  sudo ./ctbankix_lubuntu_20.04.3.sh
         
       - name: Check free disk space in current folder
         run:  df -h .
