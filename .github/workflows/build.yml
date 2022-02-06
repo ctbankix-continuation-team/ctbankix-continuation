@@ -28,8 +28,7 @@ jobs:
       - name: Add execution bit in file mode
         run:  chmod +x $SCRIPTFILE
         
-      - name: Execute script
-        run:  sudo ./$SCRIPTFILE
+
         
       - name: Check free disk space in current folder
         run:  df -h .
