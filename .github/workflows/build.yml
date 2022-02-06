@@ -6,12 +6,30 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
+  
+      - name: Check free disk space in current folder
+        run:  df -h .
+
       - name: Checkout
         uses: actions/checkout@v2
+        
+      - name: Set script file
+        run:  SCRIPTFILE=ctbankix_lubuntu_20.04.3.sh
 
-      - name: Build
-        run: |
-          echo "Free space:"
-          df -h
-          echo Current folder
-          df -h .
+      - name: Remove user interaction in script
+        run:  sed -i '63,86d' $SCRIPTFILE
+        
+      - name: Add execution bit in file mode
+        run:  chmod +x $SCRIPTFILE
+        
+      - name: Execute script
+        run:  sudo ./$SCRIPTFILE
+        
+      - name: Check free disk space in current folder
+        run:  df -h .
