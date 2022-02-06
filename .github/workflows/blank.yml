@@ -29,9 +29,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls -lisa
-          wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.3.sh
-          ls -lisa
-          chmod +x ctbankix
-          _-lubuntu_20.04.3.sh
+          chmod +x ctbankix_lubuntu_20.04.3.sh
           ls -lisa
           ./ctbankix_lubuntu_20.04.3.sh
