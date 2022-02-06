@@ -30,9 +30,9 @@ lubuntu@lubuntu:~$ cd build
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix-lubuntu_20.04.3.sh
-lubuntu@lubuntu:~$ chmod +x ctbankix-lubuntu_20.04.3.sh
-lubuntu@lubuntu:~$ sudo ./ctbankix-lubuntu_20.04.3.sh
+lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.3.sh
+lubuntu@lubuntu:~$ chmod +x ctbankix_lubuntu_20.04.3.sh
+lubuntu@lubuntu:~$ sudo ./ctbankix_lubuntu_20.04.3.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
