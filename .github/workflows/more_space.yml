@@ -19,3 +19,5 @@ jobs:
         run: |
           echo "Free space:"
           df -h
+          echo Current folder
+          df -h .
