@@ -6,14 +6,14 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
-Seit Anfang August 2020 steht ein Skript für die 64-Bit-Version von Lubuntu 20.04.x zur Verfügung. Dieses ersetzt das bisherige Skript für die 32-Bit-Version von Lubuntu 18.04.x, weil seitens Lubuntu keine 32-Bit-Version mehr bereitgestellt wird.
+Die aktuelle Version basiert auf Lubuntu 20.04.3 und behebt einige Fehler der Vorversion. Das alte Firefox-Profil von `ctbankix` wird nicht weiterentwickelt. Es stehen zwei neue Profile zur Verfügung, die auf den Einstellungen des [user.js-Projekts von pyllyukko](https://github.com/pyllyukko/user.js) beruhen. Da Ubuntu nur noch das aktuelle ISO-Image von Lubuntu auf seinen CD-Image-Servern bereithält, wird voraussichtlich zu jedem neuen Release von LUbuntu (also auch Point-Releases) ein neues Skript hier zur Verfügung gestellt.
 
 ## Bauanleitung
 
 ### Build-System bereitstellen
 
 1. VirtualBox (und ggf. Extension Pack) installieren
-2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.2](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.2-desktop-amd64.iso) installieren.
+2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.3](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.3-desktop-amd64.iso) installieren.
 3. Gasterweiterungen installieren
 
 ### Live-System innerhalb des Build-Systems bauen
@@ -30,9 +30,9 @@ lubuntu@lubuntu:~$ cd build
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix-continuation_Lubuntu_64_20.04.2.sh
-lubuntu@lubuntu:~$ chmod +x ctbankix-continuation_Lubuntu_64_20.04.2.sh
-lubuntu@lubuntu:~$ sudo ./ctbankix-continuation_Lubuntu_64_20.04.2.sh
+lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix-lubuntu_20.04.3.sh
+lubuntu@lubuntu:~$ chmod +x ctbankix-lubuntu_20.04.3.sh
+lubuntu@lubuntu:~$ sudo ./ctbankix-lubuntu_20.04.3.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
