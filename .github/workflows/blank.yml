@@ -28,6 +28,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix-lubuntu_20.04.3.sh
-          chmod +x ctbankix-lubuntu_20.04.3.sh
-          ./ctbankix-lubuntu_20.04.3.sh
+          ls -lisa
+          wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.3.sh
+          ls -lisa
+          chmod +x ctbankix
+          _-lubuntu_20.04.3.sh
+          ls -lisa
+          ./ctbankix_lubuntu_20.04.3.sh
