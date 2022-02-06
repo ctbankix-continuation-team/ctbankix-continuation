@@ -1,0 +1,17 @@
+name: Build for test
+on: push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          echo "Free space:"
+          df -h
+          echo Current folder
+          df -h .
