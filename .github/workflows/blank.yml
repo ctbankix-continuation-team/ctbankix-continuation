@@ -30,6 +30,6 @@ jobs:
         run: |
           ls -lisa
           chmod +x ctbankix_lubuntu_20.04.3.sh
-          sed '63,86d' ctbankix_lubuntu_20.04.3.sh
+          sed -i '63,86d' ctbankix_lubuntu_20.04.3.sh
           ls -lisa
           ./ctbankix_lubuntu_20.04.3.sh
