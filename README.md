@@ -4,15 +4,15 @@
 
 Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführen. Bereitgestellt wird dazu ein Shell-Skript, mit dem ein neues Live-System erzeugt werden kann. Bitte folgen Sie den Hinweisen im Shell-Skript am Anfang sowie der unten beschriebenen Bauanleitung.
 
+
 ## Neueste Updates
 
 ### 16.02.2022
-
-Unter [Releases](https://github.com/ctbankix-continuation-team/ctbankix-continuation/releases) werden durch die CI/CD-Pipeline gebaute ISO-Images bereitgestellt. Diese kann man herunterlade 
+Unter [Releases](https://github.com/ctbankix-continuation-team/ctbankix-continuation/releases) werden durch die CI/CD-Pipeline gebaute ISO-Images wöchentlich bereitgestellt. Diese kann man herunterladen und entsprechend der unten stehenden Anleitung auf einen USB-Stick ablegen, von wo sie gestartet werden können. Das ist so sicher, wie man der Github-Pipeline eben vertraut.
 
 ### 06.02.2022
-
 Die aktuelle Version basiert auf Lubuntu 20.04.3 und behebt einige Fehler der Vorversion. Das alte Firefox-Profil von `ctbankix` wird nicht weiterentwickelt. Es stehen zwei neue Profile zur Verfügung, die auf den Einstellungen des [user.js-Projekts von pyllyukko](https://github.com/pyllyukko/user.js) beruhen. Da Ubuntu nur noch das aktuelle ISO-Image von Lubuntu auf seinen CD-Image-Servern bereithält, wird voraussichtlich zu jedem neuen Release von LUbuntu (also auch Point-Releases) ein neues Skript hier zur Verfügung gestellt.
+
 
 ## Bauanleitung
 
