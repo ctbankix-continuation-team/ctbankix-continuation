@@ -1,8 +1,5 @@
 name: Build for test
-on:
-  push:
-    branches: [ master ]
-    
+on:   
   workflow_dispatch:
   
   schedule:
