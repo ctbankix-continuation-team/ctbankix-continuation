@@ -6,6 +6,12 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
+### 16.02.2022
+
+Unter [Releases](https://github.com/ctbankix-continuation-team/ctbankix-continuation/releases) werden durch die CI/CD-Pipeline gebaute ISO-Images bereitgestellt. Diese kann man herunterlade 
+
+### 06.02.2022
+
 Die aktuelle Version basiert auf Lubuntu 20.04.3 und behebt einige Fehler der Vorversion. Das alte Firefox-Profil von `ctbankix` wird nicht weiterentwickelt. Es stehen zwei neue Profile zur Verfügung, die auf den Einstellungen des [user.js-Projekts von pyllyukko](https://github.com/pyllyukko/user.js) beruhen. Da Ubuntu nur noch das aktuelle ISO-Image von Lubuntu auf seinen CD-Image-Servern bereithält, wird voraussichtlich zu jedem neuen Release von LUbuntu (also auch Point-Releases) ein neues Skript hier zur Verfügung gestellt.
 
 ## Bauanleitung
