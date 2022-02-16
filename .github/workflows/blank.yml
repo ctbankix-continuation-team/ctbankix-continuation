@@ -15,7 +15,7 @@ jobs:
       - name: Echo current date
         run: echo ${{env.DATE}}
       - name: Touch
-        run: touch live.iso
+        run: echo Hallo > live.iso
       - name: Rename
         run: mv live.iso ctbankix_${{env.DATE}}.iso
       - name: Create Release
@@ -37,4 +37,4 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
           asset_path: ./ctbankix_${{env.DATE}}.iso
           asset_name: ctbankix_${{env.DATE}}.iso
-          asset_content_type: application/iso
+          asset_content_type: application/x-iso-image
