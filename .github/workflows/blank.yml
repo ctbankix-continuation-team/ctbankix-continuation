@@ -13,4 +13,4 @@ jobs:
       - name: Set current date as env variable
         run: echo "DATE::$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       - name: Echo current date
-        run: echo $DATE
+        run: echo ${{env.DATE}}
