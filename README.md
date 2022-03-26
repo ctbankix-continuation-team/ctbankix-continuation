@@ -22,7 +22,7 @@ Die aktuelle Version basiert auf Lubuntu 20.04.3 und behebt einige Fehler der Vo
 ### Build-System bereitstellen
 
 1. VirtualBox (und ggf. Extension Pack) installieren
-2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.3](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.3-desktop-amd64.iso) installieren.
+2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.4](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.4-desktop-amd64.iso) installieren.
 3. Gasterweiterungen installieren
 
 ### Live-System innerhalb des Build-Systems bauen
@@ -39,9 +39,9 @@ lubuntu@lubuntu:~$ cd build
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.3.sh
-lubuntu@lubuntu:~$ chmod +x ctbankix_lubuntu_20.04.3.sh
-lubuntu@lubuntu:~$ sudo ./ctbankix_lubuntu_20.04.3.sh
+lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.4.sh
+lubuntu@lubuntu:~$ chmod +x ctbankix_lubuntu_20.04.4.sh
+lubuntu@lubuntu:~$ sudo ./ctbankix_lubuntu_20.04.4.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
