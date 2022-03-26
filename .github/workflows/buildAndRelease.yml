@@ -24,13 +24,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Remove user interaction in script
-        run:  sed -i '63,86d' ctbankix_lubuntu_20.04.3.sh
+        run:  sed -i '66,89d' ctbankix_lubuntu_*.sh
         
       - name: Add execution bit in file mode
-        run:  chmod +x ctbankix_lubuntu_20.04.3.sh
+        run:  chmod +x ctbankix_lubuntu_*.sh
         
       - name: Execute script
-        run:  sudo ./ctbankix_lubuntu_20.04.3.sh
+        run:  sudo ./ctbankix_lubuntu_*.sh
         
       - name: Check free disk space in current folder
         run:  df -h .
