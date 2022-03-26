@@ -7,6 +7,9 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
+### 26.03.2022
+Update auf die neue Version 20.04.4 mit angepasstem 5.13er-Kernel und einigen kleineren Änderungen.
+
 ### 16.02.2022
 Unter [Releases](https://github.com/ctbankix-continuation-team/ctbankix-continuation/releases) werden durch die CI/CD-Pipeline gebaute ISO-Images wöchentlich bereitgestellt. Diese kann man herunterladen und entsprechend der unten stehenden Anleitung auf einen USB-Stick ablegen, von wo sie gestartet werden können. Das ist so sicher, wie man der Github-Pipeline eben vertraut.
 
