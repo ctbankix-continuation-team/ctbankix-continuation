@@ -100,7 +100,7 @@ apt-get update
 
 # Benoetigte Pakete zum Bauen installieren
 apt-get -y build-dep linux
-apt-get -y install git fakeroot libncurses-dev gawk flex bison openssl libssl-dev dkms zstd libelf-dev libudev-dev libpci-dev libiberty-dev autoconf systemtap-sdt-dev libzstd-dev libbabeltrace-dev libperl-dev binutils-dev
+apt-get -y install git fakeroot libncurses-dev gawk flex bison openssl llvm libssl-dev dkms zstd libelf-dev libudev-dev libpci-dev libiberty-dev autoconf systemtap-sdt-dev libzstd-dev libbabeltrace-dev libperl-dev binutils-dev
 
 # Quellcode des Kernels auschecken und in Verzeichnis wechseln
 git clone --branch hwe-5.13 --depth 1 git://kernel.ubuntu.com/ubuntu/ubuntu-focal.git kernel/current_head
