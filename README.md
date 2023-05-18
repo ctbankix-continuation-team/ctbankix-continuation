@@ -7,6 +7,9 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
+### 18.05.2023
+Update auf die Version 20.04.6 mit angepasstem 5.15er-Kernel und einigen kleineren Änderungen. Da der Aufwand für die 22.04er LTS-Version sehr groß ist (Snap entfernen, neues Bootsystem, ...), pflegen wir die 20.04er Version weiter. Da akutell keine 20.04.6er ISO-Datei seitens Lubuntu bereitgestellt wird, müssen wir den Umweg über die 20.04.5er ISO-Datei gehen (siehe Beschreibung unten).
+
 ### 26.03.2022
 Update auf die neue Version 20.04.4 mit angepasstem 5.13er-Kernel und einigen kleineren Änderungen.
 
@@ -22,8 +25,9 @@ Die aktuelle Version basiert auf Lubuntu 20.04.3 und behebt einige Fehler der Vo
 ### Build-System bereitstellen
 
 1. VirtualBox (und ggf. Extension Pack) installieren
-2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.4](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.4-desktop-amd64.iso) installieren.
-3. Gasterweiterungen installieren
+2. Virtuelle Maschine aufsetzen (64-Bit Linux, 50GB Festplattenplatz, min. 4GB RAM, aktive Netzwerkverbindung per NAT) und darin [Lubuntu 64 Bit 20.04.5](http://cdimage.ubuntu.com/lubuntu/releases/20.04/release/lubuntu-20.04.5-desktop-amd64.iso) installieren.
+3. System updaten und neustarten
+4. Gasterweiterungen installieren
 
 ### Live-System innerhalb des Build-Systems bauen
 
@@ -39,9 +43,9 @@ lubuntu@lubuntu:~$ cd build
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.4.sh
-lubuntu@lubuntu:~$ chmod +x ctbankix_lubuntu_20.04.4.sh
-lubuntu@lubuntu:~$ sudo ./ctbankix_lubuntu_20.04.4.sh
+lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_lubuntu_20.04.6.sh
+lubuntu@lubuntu:~$ chmod +x ctbankix_lubuntu_20.04.6.sh
+lubuntu@lubuntu:~$ sudo ./ctbankix_lubuntu_20.04.6.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
