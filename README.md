@@ -7,8 +7,8 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
-### 19.02.2025 "Back to the roots"
-"Zurück zu den Wurzel" - so lautet das neue Release. Nachdem Canonical mit Ubuntu immer eigenwilligere Wege geht, verabschiedet sich das Projekt nunmehr von Ubuntu als Basis und nutzt zukünftig Debian (von dem Ubuntu abgeleitet ist) als Basis. In diesem Zusammenhang stehen auch neue Möglichkeiten zur Verfügung, ein minimales ISO-Image zu bauen.
+### 19.02.2025 _Back to the roots_
+_Zurück zu den Wurzeln_ - so lautet das neue Release. Nachdem Canonical mit Ubuntu immer eigenwilligere Wege geht, verabschiedet sich das Projekt nunmehr von Ubuntu als Basis und nutzt zukünftig Debian (von dem Ubuntu abgeleitet ist). In diesem Zusammenhang stehen auch neue Möglichkeiten zur Verfügung, ein minimales ISO-Image zu bauen.
 
 
 ## Bauanleitung
