@@ -27,16 +27,16 @@ Die Konsole öffnen (<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd>).
 Ein neues Verzeichnis anlegen, in dem das Live-System gebaut wird, und dahin hineinwechseln.
 
 ```shell
-lubuntu@lubuntu:~$ mkdir build
-lubuntu@lubuntu:~$ cd build
+mkdir build
+cd build
 ```
 
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-lubuntu@lubuntu:~$ wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_debian_12.sh
-lubuntu@lubuntu:~$ chmod +x ctbankix_debian_12.sh
-lubuntu@lubuntu:~$ sudo ./ctbankix_debian_12.sh
+wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_debian_12.sh
+chmod +x ctbankix_debian_12.sh
+sudo ./ctbankix_debian_12.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
