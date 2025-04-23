@@ -93,7 +93,7 @@ fi
 apt-get update
 
 # Benoetigte Pakete zum Bauen installieren
-apt-get -y install build-essential fakeroot libncurses-dev xz-utils libssl-dev flex libelf-dev bison bc bison rsync debhelper
+apt-get -y install build-essential fakeroot libncurses-dev xz-utils libssl-dev flex libelf-dev bison bc bison rsync debhelper live-build
 
 # Quellcode des Kernels auschecken und in Verzeichnis wechseln
 mkdir -p kernel
