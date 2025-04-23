@@ -402,7 +402,7 @@ then
 	sudo sync -f $MOUNTPOINT/live/
 	sudo mount -o remount,ro $MOUNTPOINT
 	echo
-	echo "Das System muss heruntergefahren werden! Aktivieren Sie anschließend den mechanischen Schreibschutzschalter und starten neu. Bitte Taste druecken!"
+	echo "Das System muss heruntergefahren werden! Aktivieren Sie anschließend den mechanischen Schreibschutzschalter und starten neu. Bitte Enter-Taste druecken!"
 	read dummy
 	sudo shutdown -P now
 else
