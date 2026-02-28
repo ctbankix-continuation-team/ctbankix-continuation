@@ -7,6 +7,9 @@ Dieses Projekt möchte das mittlerweile beendete Projekt _ctbankix_ weiterführe
 
 ## Neueste Updates
 
+### 28.02.2026 _Trixie ist da ... und die Macht ist mir ihr_
+Die neue Version zum Bauen des ISO-Images auf Grundlage von Debian 13 aka Trixie steht bereit.
+
 ### 19.02.2025 _Back to the roots_
 _Zurück zu den Wurzeln_ - so lautet das neue Release. Nachdem Canonical mit Ubuntu immer eigenwilligere Wege geht, verabschiedet sich das Projekt nunmehr von Ubuntu als Basis und nutzt zukünftig Debian (von dem Ubuntu abgeleitet ist). In diesem Zusammenhang stehen auch neue Möglichkeiten zur Verfügung, ein minimales ISO-Image zu bauen.
 
@@ -16,7 +19,7 @@ _Zurück zu den Wurzeln_ - so lautet das neue Release. Nachdem Canonical mit Ubu
 ### Build-System bereitstellen
 
 1. VirtualBox (und ggf. Extension Pack) installieren
-2. Virtuelle Maschine aufsetzen (Debian 12 LxQt, 100GB Festplattenplatz, min. 8GB RAM, aktive Netzwerkverbindung per NAT) und darin [Debian 12 LxQt](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/) installieren.
+2. Virtuelle Maschine aufsetzen (Debian 13 LxQt, 100GB Festplattenplatz, min. 8GB RAM, aktive Netzwerkverbindung per NAT) und darin [Debian 13 LxQt](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/) installieren.
 3. System updaten und neustarten
 4. Gasterweiterungen installieren
 
@@ -34,9 +37,9 @@ cd build
 Das Build-Skript herunterladen, startbar machen und per sudo ausführen.
 
 ```shell
-wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_debian_12.sh
-chmod +x ctbankix_debian_12.sh
-sudo ./ctbankix_debian_12.sh
+wget https://github.com/ctbankix-continuation-team/ctbankix-continuation/raw/master/ctbankix_debian_13.sh
+chmod +x ctbankix_debian_13.sh
+sudo ./ctbankix_debian_13.sh
 ```
 
 ### Erzeugte ISO-Datei auf einen USB-Stick kopieren
