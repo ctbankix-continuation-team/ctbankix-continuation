@@ -147,7 +147,7 @@ cd ../../
 
 
 # >>>>>>>>>> Live-Build-System bauen >>>>>>>>>>
-apt-get -y install 
+apt-get -y install live-build
 
 mkdir -p live-build
 cd live-build
