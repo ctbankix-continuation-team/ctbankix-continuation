@@ -253,6 +253,7 @@ chroot squashfs/ apt-get -y upgrade
 
 # Zusaetzliche Pakete einspielen
 chroot squashfs/ apt-get -y --no-install-recommends --no-install-suggests install squashfs-tools systemd-timesyncd bash-completion nm-tray nm-tray-l10n qpdfview screengrab package-update-indicator gnome-package-updater
+chroot squashfs/ apt-get -y --no-install-recommends --no-install-suggests install network-manager nm-tray wpasupplicant firmware-linux firmware-iwlwifi
 
 # Zeitzone setzen
 echo "TZ=Europe/Berlin" | tee squashfs/etc/environment
